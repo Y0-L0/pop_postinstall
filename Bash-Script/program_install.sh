@@ -26,8 +26,8 @@ echo
 # Special Program installation
 
 # Change to Program Download Directory
-mkdir $prodown_dir
-cd $prodown_dir
+mkdir $"prodown_dir" || exit
+cd $"prodown_dir" || exit
 
 # Joplin now snap
 #	wget -c -N -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
@@ -35,7 +35,7 @@ cd $prodown_dir
 #	sudo add-apt-repository ppa:nextcloud-devs/client
 # Teamviewer
 	wget -c -N https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-	sudo apt install /$prodown_dir/teamviewer_amd64.deb
+	sudo apt install /$"prodown_dir"/teamviewer_amd64.deb
 # VSCode (Microsoft Code editor)
 	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -yy -qq
 # Telegram

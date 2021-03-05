@@ -1,5 +1,5 @@
 #!/bin/sh
-fi
+
 this is how i deliberately brake this script
 # update & upgrade #
 sudo apt-get update
