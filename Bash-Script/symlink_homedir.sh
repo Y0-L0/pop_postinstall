@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# OUTDATED!
+# not updated with new variables/ system and not tested in vm.
 # this script creates symlinks from /media/jojo_data to ~/home
 
 # Prerequisits
