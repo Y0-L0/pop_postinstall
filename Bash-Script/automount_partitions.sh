@@ -16,10 +16,10 @@ if ask "Do you want to automount the NTFS Data Partition now?"; then
 	cp  /etc/fstab fstab_backup/fstab_"$(date +%Y%m%d_%H%M%S)"
 	echo "fstab copied to 'Home'"
 	echo
-	sudo mkdir $"data_dir"
+	sudo mkdir "$data_dir"
 	# display all partitions and relevant info to figure it out
 	sudo fdisk -l
-	read -p -r "enter partition ('sda1')" data_LABEL
+	read -p "enter partition ('sda1')" data_LABEL
 
 	# Make uuid a variable
 	data_uuid=$(blkid -d -o value -s UUID /dev/"$data_LABEL")
@@ -63,7 +63,7 @@ if ask "Do you want to automount the NTFS Windows(OS) Partition now?"; then
 	sudo mkdir "$win_dir"
 	# display all partitions and relevant info to figure it out
 	sudo fdisk -l
-	read -p -r "enter partition ('sda1')" windows_LABEL
+	read -p "enter partition ('sda1')" windows_LABEL
 
 	# Make uuid a variable
 	win_uuid=$(blkid -d -o value -s UUID /dev/"$windows_LABEL")
