@@ -20,7 +20,12 @@ sudo apt install -yy keepassxc xdotool evolution gnome-tweak-tool software-prope
 
 # Snap program installation
 	sudo apt install snapd -y
-	sudo snap install vlc whatsdesk signal-desktop android-file-transfer-linux joplin_desktop
+	sudo apt install snapd -y
+	sudo snap install vlc 
+	sudo snap install whatsdesk 
+	sudo snap install signal-desktop 
+	sudo snap install android-file-transfer-linux 
+	sudo snap install joplin-desktop
 echo
 
 # Special Program installation
